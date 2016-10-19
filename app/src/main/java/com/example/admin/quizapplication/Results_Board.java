@@ -51,7 +51,7 @@ public class Results_Board extends Activity{
         possible_answers="";
         questions_and_YourAnswers="";
         questions_and_PossibleAnswers="";
-        song = MediaPlayer.create(Results_Board.this,R.raw.welcome);
+        song = MediaPlayer.create(Results_Board.this,R.raw.like);
     }
     @Override
     public void onBackPressed() {
