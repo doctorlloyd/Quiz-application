@@ -15,23 +15,25 @@
         android:gravity="center"
         android:layout_weight="15"
         android:id="@+id/tvResults_board" />
-
-    <LinearLayout
+    <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="200dp"
-        android:orientation="horizontal"
-        android:weightSum="100"
+        android:layout_height="wrap_content"
         android:layout_weight="85">
-        <TextView
+        <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:id="@+id/tvQuestions_and_YourAnswers"/>
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:id="@+id/tvQuestions_and_PossibleAnswers"
-            android:visibility="gone"/>
-    </LinearLayout>
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/tvQuestions_and_YourAnswers"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/tvQuestions_and_PossibleAnswers"
+                android:visibility="gone"/>
+        </LinearLayout>
+    </ScrollView>
 
     <ToggleButton
         android:layout_width="match_parent"
