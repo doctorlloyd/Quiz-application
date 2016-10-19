@@ -28,8 +28,6 @@ public class Politics extends Activity implements RadioGroup.OnCheckedChangeList
     }
     public void initialize()
     {
-        counter = 0;
-
         rg1 = (RadioGroup) findViewById(R.id.rg1);
         rg2 = (RadioGroup)findViewById(R.id.rg2);
         rg3 = (RadioGroup)findViewById(R.id.rg3);
