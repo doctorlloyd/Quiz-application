@@ -64,43 +64,57 @@ public class Politics extends Activity implements RadioGroup.OnCheckedChangeList
         if(group.getId()==R.id.rg1){
             answers.add(((RadioButton) findViewById(group.getCheckedRadioButtonId())).getText().toString());
             if(checkedId==R.id.rbq14)
+            {
                 counter ++;
+            }
         }
 
         if(group.getId()==R.id.rg2){
             answers.add(((RadioButton) findViewById(group.getCheckedRadioButtonId())).getText().toString());
             if(checkedId==R.id.rbq21)
+            {
                 counter ++;
+            }
         }
 
         if(group.getId()==R.id.rg3){
             answers.add(((RadioButton) findViewById(group.getCheckedRadioButtonId())).getText().toString());
             if(checkedId==R.id.rbq33)
+            {
                 counter ++;
+            }
         }
 
         if(group.getId()==R.id.rg4){
             answers.add(((RadioButton) findViewById(group.getCheckedRadioButtonId())).getText().toString());
             if(checkedId==R.id.rbq43)
+            {
                 counter ++;
+            }
         }
 
         if(group.getId()==R.id.rg5){
             answers.add(((RadioButton) findViewById(group.getCheckedRadioButtonId())).getText().toString());
             if(checkedId==R.id.rbq53)
+            {
                 counter ++;
+            }
         }
 
         if(group.getId()==R.id.rg6){
             answers.add(((RadioButton) findViewById(group.getCheckedRadioButtonId())).getText().toString());
             if(checkedId==R.id.rbq64)
+            {
                 counter ++;
+            }
         }
 
         if(group.getId()==R.id.rg7){
             answers.add(((RadioButton) findViewById(group.getCheckedRadioButtonId())).getText().toString());
             if(checkedId==R.id.rbq73)
+            {
                 counter ++;
+            }
         }
     }
     @Override

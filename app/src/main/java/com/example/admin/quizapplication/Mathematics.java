@@ -63,37 +63,49 @@ public class Mathematics extends Activity implements RadioGroup.OnCheckedChangeL
         if(group.getId()==R.id.rg1){
             answers.add(((RadioButton) findViewById(group.getCheckedRadioButtonId())).getText().toString());
             if(checkedId==R.id.rbq14)
-                counter++;
+            {
+                counter ++;
+            }
         }
 
         if(group.getId()==R.id.rg2){
             answers.add(((RadioButton) findViewById(group.getCheckedRadioButtonId())).getText().toString());
             if(checkedId==R.id.rbq23)
+            {
                 counter ++;
+            }
         }
 
         if(group.getId()==R.id.rg3){
             answers.add(((RadioButton) findViewById(group.getCheckedRadioButtonId())).getText().toString());
             if(checkedId==R.id.rbq32)
+            {
                 counter ++;
+            }
         }
 
         if(group.getId()==R.id.rg4){
             answers.add(((RadioButton) findViewById(group.getCheckedRadioButtonId())).getText().toString());
             if(checkedId==R.id.rbq42)
+            {
                 counter ++;
+            }
         }
 
         if(group.getId()==R.id.rg5){
             answers.add(((RadioButton) findViewById(group.getCheckedRadioButtonId())).getText().toString());
             if(checkedId==R.id.rbq54)
+            {
                 counter ++;
+            }
         }
 
         if(group.getId()==R.id.rg6){
             answers.add(((RadioButton) findViewById(group.getCheckedRadioButtonId())).getText().toString());
             if(checkedId==R.id.rbq63)
+            {
                 counter ++;
+            }
         }
     }
     @Override

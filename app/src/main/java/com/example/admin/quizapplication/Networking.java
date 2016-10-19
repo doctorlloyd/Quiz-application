@@ -73,61 +73,81 @@ public class Networking extends Activity implements RadioGroup.OnCheckedChangeLi
         if(group.getId()==R.id.rg1){
             answers.add(((RadioButton) findViewById(group.getCheckedRadioButtonId())).getText().toString());
             if(checkedId==R.id.rbq14)
+            {
                 counter ++;
+            }
         }
 
         if(group.getId()==R.id.rg2){
             answers.add(((RadioButton) findViewById(group.getCheckedRadioButtonId())).getText().toString());
             if(checkedId==R.id.rbq24)
+            {
                 counter ++;
+            }
         }
 
         if(group.getId()==R.id.rg3){
             answers.add(((RadioButton) findViewById(group.getCheckedRadioButtonId())).getText().toString());
             if(checkedId==R.id.rbq31)
+            {
                 counter ++;
+            }
         }
 
         if(group.getId()==R.id.rg4){
             answers.add(((RadioButton) findViewById(group.getCheckedRadioButtonId())).getText().toString());
             if(checkedId==R.id.rbq42)
+            {
                 counter ++;
+            }
         }
 
         if(group.getId()==R.id.rg5){
             answers.add(((RadioButton) findViewById(group.getCheckedRadioButtonId())).getText().toString());
             if(checkedId==R.id.rbq54)
+            {
                 counter ++;
+            }
         }
 
         if(group.getId()==R.id.rg6){
             answers.add(((RadioButton) findViewById(group.getCheckedRadioButtonId())).getText().toString());
             if(checkedId==R.id.rbq61)
+            {
                 counter ++;
+            }
         }
 
         if(group.getId()==R.id.rg7){
             answers.add(((RadioButton) findViewById(group.getCheckedRadioButtonId())).getText().toString());
             if(checkedId==R.id.rbq71)
+            {
                 counter ++;
+            }
         }
 
         if(group.getId()==R.id.rg8){
             answers.add(((RadioButton) findViewById(group.getCheckedRadioButtonId())).getText().toString());
             if(checkedId==R.id.rbq83)
+            {
                 counter ++;
+            }
         }
 
         if(group.getId()==R.id.rg9){
             answers.add(((RadioButton) findViewById(group.getCheckedRadioButtonId())).getText().toString());
             if(checkedId==R.id.rbq93)
+            {
                 counter ++;
+            }
         }
 
         if(group.getId()==R.id.rg10){
             answers.add(((RadioButton) findViewById(group.getCheckedRadioButtonId())).getText().toString());
             if(checkedId==R.id.rbq104)
+            {
                 counter ++;
+            }
         }
     }
     @Override
