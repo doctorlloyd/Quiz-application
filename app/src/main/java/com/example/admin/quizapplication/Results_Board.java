@@ -2,6 +2,7 @@ package com.example.admin.quizapplication;
 
 import android.app.Activity;
 import android.content.Intent;
+import android.media.MediaPlayer;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.TextView;
@@ -14,12 +15,14 @@ public class Results_Board extends Activity{
     private double score;
     private TextView tvDisplay,tvQuestions_and_YourAnswers,tvQuestions_and_PossibleAnswers;
     private ArrayList<String> answers = new ArrayList<String>();
+    MediaPlayer song;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.results__board);
         final ToggleButton tbViewQuestions = (ToggleButton)findViewById(R.id.tbResults_board);
         initialize();
+        song.start();
         possible_answers = getIntent().getStringExtra("string");
         score = getIntent().getDoubleExtra("score",0.00);
         answers = getIntent().getStringArrayListExtra("answers");
@@ -48,6 +51,7 @@ public class Results_Board extends Activity{
         possible_answers="";
         questions_and_YourAnswers="";
         questions_and_PossibleAnswers="";
+        song = MediaPlayer.create(Results_Board.this,R.raw.welcome);
     }
     @Override
     public void onBackPressed() {
@@ -69,5 +73,11 @@ public class Results_Board extends Activity{
         }
         tvQuestions_and_YourAnswers.setText(questions_and_YourAnswers);
         tvQuestions_and_PossibleAnswers.setText(questions_and_PossibleAnswers);
+    }
+
+    @Override
+    protected void onPause() {
+        super.onPause();
+        song.release();
     }
 }

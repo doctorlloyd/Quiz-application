@@ -21,12 +21,7 @@ public class Topics extends Activity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.topics);
         initialize();
-        try{
-            song.start();
-        }catch (Exception e)
-        {
-
-        }
+        song.start();
         populate();
         ArrayAdapter adapter = new ArrayAdapter(this,android.R.layout.simple_list_item_1,array);
         list.setAdapter(adapter);
@@ -73,16 +68,9 @@ public class Topics extends Activity {
         startActivity(intent);
         finish();
     }
-
-    @Override
-    protected void onResume() {
-        super.onResume();
-        song.release();
-    }
-
     public void initialize()
     {
-        song = MediaPlayer.create(Topics.this,R.raw.welcome);
+        song = MediaPlayer.create(Topics.this,R.raw.moment);
         list = (ListView)findViewById(R.id.topicList);
     }
     public void populate()
@@ -97,5 +85,10 @@ public class Topics extends Activity {
         array.add(message);
         message = "CARS";
         array.add(message);
+    }
+    @Override
+    protected void onResume(){
+        super.onResume();
+        song.release();
     }
 }
