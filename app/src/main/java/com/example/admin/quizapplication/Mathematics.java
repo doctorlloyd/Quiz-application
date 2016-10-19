@@ -104,12 +104,15 @@ public class Mathematics extends Activity implements RadioGroup.OnCheckedChangeL
     }
     public void proceedToScore(View view)
     {
-        Intent intent = new Intent(getBaseContext(),Results_Board.class);
-        intent.putExtra("score",calculatePercentage());
-        intent.putExtra("string",mathematics());
-        intent.putStringArrayListExtra("answers", answers);
-        startActivity(intent);
-        finish();
+        if(answers.size()>=6)
+        {
+            Intent intent = new Intent(getBaseContext(),Results_Board.class);
+            intent.putExtra("score",calculatePercentage());
+            intent.putExtra("string",mathematics());
+            intent.putStringArrayListExtra("answers", answers);
+            startActivity(intent);
+            finish();
+        }
     }
 
     public double calculatePercentage()

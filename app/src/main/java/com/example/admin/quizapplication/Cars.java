@@ -7,6 +7,7 @@ import android.view.View;
 import android.widget.RadioButton;
 import android.widget.RadioGroup;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import java.util.ArrayList;
 
@@ -126,12 +127,18 @@ public class Cars extends Activity implements RadioGroup.OnCheckedChangeListener
     }
     public void proceedToScore(View view)
     {
-        Intent intent = new Intent(getBaseContext(),Results_Board.class);
-        intent.putExtra("score",calculatePercentage());
-        intent.putExtra("string",cars());
-        intent.putStringArrayListExtra("answers", answers);
-        startActivity(intent);
-        finish();
+
+        if(answers.size()>=9) {
+            Intent intent = new Intent(getBaseContext(),Results_Board.class);
+            intent.putExtra("score",calculatePercentage());
+            intent.putExtra("string",cars());
+            intent.putStringArrayListExtra("answers", answers);
+            startActivity(intent);
+            finish();
+        }else
+        {
+            Toast.makeText(getBaseContext(),"YOU DIDN'T ANSWER ALL THE QUESTIONS",Toast.LENGTH_LONG).show();
+        }
     }
 
     public double calculatePercentage()
